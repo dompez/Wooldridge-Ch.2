@@ -1,0 +1,12 @@
+## Ch.2 Problem Answers for questions 4, 12, and 14.
+
+**4** 
+The data set BWGHT contains data on births to women in the United States. Two variables of interest are the dependent variable, infant birth weight in ounces (bwght), and an explanatory variable, average number of cigarettes the mother smoked per day during pregnancy (cigs). The following simple regression was estimated using data on n = 1,388 births:
+bwght = 119.77 - 0.514(cigs)
+
+(i) What is the predicted birth weight when cigs = 0? What about when cigs = 20 (one pack per day)? Comment on the difference.
+
+
+
+(ii) Does this simple regression necessarily capture a causal relationship between the child’s birth weight and the mother’s smoking habits? Explain.
+

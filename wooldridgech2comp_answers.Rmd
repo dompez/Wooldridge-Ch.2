@@ -1,0 +1,56 @@
+## Ch.2 Computer Answer for question 5, 10, and 11.
+**C5**
+For the population of firms in the chemical industry, let rd denote annual expenditures on research and development, and let sales denote annual sales (both are in millions of dollars).
+(i) Write down a model (not an estimated equation) that implies a constant elasticity between
+rd and sales. Which parameter is the elasticity?
+```{r}
+```
+(ii) Now, estimate the model using the data in RDCHEM. Write out the estimated equation in the
+usual form. What is the estimated elasticity of rd with respect to sales? Explain in words what this elasticity means.
+```{r}
+```
+**C10** 
+The data set in CATHOLIC inludes test score information on over 7,000 students in the United States who were in eighth grade in 1988. The variables math12 and read12 are scores on twelfth grade stan- dardized math and reading tests, respectively.
+(i) How many students are in the sample? Find the means and standard deviations of math12 and
+read12.
+```{r}
+```
+(ii) Run the simple regression of math12 on read12 to obtain the OLS intercept and slope estimates.
+Report the results in the form:
+
+math12  = B0 + B1(read12) 
+n = ?, R^2 = ?
+
+where you fill in the values for b^ 0 and b^ 1 and also replace the question marks.
+```{r}
+```
+(iii) Does the intercept reported in part (ii) have a meaningful interpretation? Explain.
+```{r}
+```
+(iv) Are you surprised by the b^ 1 that you found? What about R2?
+```{r}
+```
+(v) Suppose that you present your findings to a superintendent of a school district, and the
+superintendent says, “Your findings show that to improve math scores we just need to improve reading scores, so we should hire more reading tutors.” How would you respond to this comment? (Hint: If you instead run the regression of read12 on math12, what would you expect to find?)
+```{r}
+```
+**C11** 
+Use the data in GPA1 to answer these questions. It is a sample of Michigan State University undergrad- uates from the mid-1990s, and includes current college GPA, colGPA, and a binary variable indicating whether the student owned a personal computer (PC).
+(i) How many students are in the sample? Find the average and highest college GPAs.
+```{r}
+```
+(ii) How many students owned their own PC?
+```{r}
+```
+(iii) Estimate the simple regression equation
+colGPA5b0 1b1PC1u
+and report your estimates for b0 and b1. Interpret these estimates, including a discussion ofthe
+magnitudes.
+```{r}
+```
+(iv) What is the R-squared from the regression? What do you make of its magnitude?
+```{r}
+```
+(v) Does your finding in part (iii) imply that owning a PC has a causal effect on colGPA? Explain.
+```{r}
+```
