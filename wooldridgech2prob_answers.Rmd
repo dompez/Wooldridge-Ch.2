@@ -1,12 +1,63 @@
-## Ch.2 Problem Answers for questions 4, 12, and 14.
+## Ch.2 Problem Answers for questions 4, 5, and 14.
 
 **4** 
 The data set BWGHT contains data on births to women in the United States. Two variables of interest are the dependent variable, infant birth weight in ounces (bwght), and an explanatory variable, average number of cigarettes the mother smoked per day during pregnancy (cigs). The following simple regression was estimated using data on n = 1,388 births:
 bwght = 119.77 - 0.514(cigs)
 
 (i) What is the predicted birth weight when cigs = 0? What about when cigs = 20 (one pack per day)? Comment on the difference.
-
-
+```{r}
+c0 = 119.77 - (0.514)*(0)
+c20 = 119.77 - (0.514)*(20)
+diff = c20 - c0 
+paste('We predict the infant\'s body weight when the mother doesn\t smoke to be',c0)
+paste('We predict the infant\'s body weight when the mother smokes a pack per day to be',c20)
+paste('We predict an infant\'s body weight to be',abs(diff),'pounds less when the mother smokes a pack a day.')
+```
 
 (ii) Does this simple regression necessarily capture a causal relationship between the child’s birth weight and the mother’s smoking habits? Explain.
 
+This study does not imply causation between  child's birth weight and a them mother's smoking habits because this is an observational study. At best we can say there is a negative association between smoking and an infant's body weight.
+
+**5** 
+In the linear consumption function
+
+cons = B0 + B1(inc)
+n = 100, R^2 = 0.692
+
+the (estimated) marginal propensity to consume (MPC) out of income is simply the slope, B1, while the average propensity to consume (APC) is cons/inc = B0/inc + B1. Using observations for 100 families on annual income and consumption (both measured in dollars), the following equation is obtained:
+
+cons = -124.84 + 0.853 inc
+n = 100, R^2 = 0.692
+
+(i) Interpret the intercept in this equation, and comment on its sign and magnitude.
+Given a family has no income, we predict they'll consume -124.84. This does not make sense as this means they'll do the opposite of consume, which may be to produce. 
+
+(ii) What is the predicted consumption when family income is $30,000?
+```{r}
+-124.84 + (0.853)*(30000)
+```
+
+(iii) With inc on the x-axis, draw a graph of the estimated MPC and APC.
+
+**11** 
+Suppose you are interested in estimating the effect of hours spent in an SAT preparation course (hours) on total SAT score (sat). The population is all college-bound high school seniors for a particular year.
+
+(i) Suppose you are given a grant to run a controlled experiment. Explain how you would structure the experiment in order to estimate the causal effect of hours on sat.
+
+I would randomly select a number of high school seniors from the school and assign a random amount of hours they should spend studying for the SAT and have them attend an after-school study session.
+
+(ii) Consider the more realistic case where students choose how much time to spend in a preparation course, and you can only randomly sample sat and hours from the population. Write the population model as:
+
+sat = B0 + B1(hours) + u
+
+where, as usual in a model with an intercept, we can assume E(u) = 0. List at least two factors contained in u. Are these likely to have a positive or negative correlation with hours?
+
+One factor could be the amount of hours a student works, which may have a negative correlation with study hours. Another outside factor could be how long a student practices for a sport, which will have a negative correlation with study hours. 
+
+(iii) In the equation from part (ii), what should be the sign of b1 if the preparation course is effective?
+
+It should be positive.
+
+(iv) In the equation from part (ii), what is the interpretation of b0?
+
+Given there is no hours spent studying, b0 would be the SAT score. 
